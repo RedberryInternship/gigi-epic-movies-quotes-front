@@ -1,7 +1,7 @@
-import { GoBackButtonMobileType } from 'types';
+import { Props } from './Props';
 
 /* eslint-disable @next/next/no-img-element */
-export const GoBackButtonMobile: React.FC<GoBackButtonMobileType> = (props) => {
+export const GoBackButtonMobile: React.FC<Props> = (props) => {
   return (
     <div className='w-full h-9 mt-[6.55rem] flex justify-start items-center px-10'>
       <div

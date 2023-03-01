@@ -1,8 +1,8 @@
-import { ProfileInputsMobileType } from 'types';
+import { Props } from './Props';
 import { UsernameOrPassword } from 'components';
 import { useProfileInputsMobileConfig } from 'hooks';
 
-export const ProfileInputs: React.FC<ProfileInputsMobileType> = (props) => {
+export const ProfileInputs: React.FC<Props> = (props) => {
   const { t, editHandler, mobileConfirmationModalHere } =
     useProfileInputsMobileConfig(props.name, props.setEnableProfileModalEdit);
   return (

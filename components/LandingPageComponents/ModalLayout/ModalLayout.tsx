@@ -1,6 +1,6 @@
-import { ModalLayoutType } from 'types';
+import { Props } from './Props';
 import { useCloseModal } from 'hooks';
-export const ModalLayout: React.FC<ModalLayoutType> = (props) => {
+export const ModalLayout: React.FC<Props> = (props) => {
   const { modalRef, closeModal } = useCloseModal(props.modal);
 
   return (

@@ -1,6 +1,5 @@
-export type SwitchModalsType = {
-  showLoginModal: boolean;
+export type Props = {
   setShowLoginModal: (value: boolean) => void;
-  showRegistrationModal: boolean;
+  setHasRegistered: (value: boolean) => void;
   setShowRegistrationModal: (value: boolean) => void;
 };

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { LandingImageType } from 'types';
+import { Props } from './Props';
 
-export const LandingImage: React.FC<LandingImageType> = (props) => {
+export const LandingImage: React.FC<Props> = (props) => {
   return (
     <div className='w-full h-[27rem] lg:h-[75rem]'>
       <div

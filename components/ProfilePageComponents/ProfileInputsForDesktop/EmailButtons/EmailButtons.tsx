@@ -1,7 +1,7 @@
-import { EmailButtonsType } from 'types';
+import { Props } from './Props';
 import { useEmailButtonsConfig } from 'hooks';
 
-export const EmailButtons: React.FC<EmailButtonsType> = (props) => {
+export const EmailButtons: React.FC<Props> = (props) => {
   const { deleteHandler, t, primaryChangerHandler } = useEmailButtonsConfig(
     props.value,
     props.verified,

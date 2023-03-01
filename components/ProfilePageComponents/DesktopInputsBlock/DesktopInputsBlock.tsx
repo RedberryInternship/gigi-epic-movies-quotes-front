@@ -1,8 +1,8 @@
 import { ProfileInputsForDesktop, AddEmailButton } from 'components';
 import { useDesktopInputsBlockConfig } from 'hooks';
-import { DesktopInputsBlockType } from 'types';
+import { Props } from './Props';
 
-const DesktopInputsBlock: React.FC<DesktopInputsBlockType> = (props) => {
+const DesktopInputsBlock: React.FC<Props> = (props) => {
   const { screenWidth, t, user } = useDesktopInputsBlockConfig();
   const displayOtherEmails = user?.emails.map(
     (email: { email_verified_at: string | null }, i: number) => {

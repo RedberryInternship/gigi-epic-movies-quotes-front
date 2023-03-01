@@ -1,8 +1,8 @@
-import { LanguageButtonType } from 'types';
+import { Props } from './Props';
 import { clickHandler } from 'helpers';
 import { useRouter } from 'next/router';
 
-export const LanguageButton: React.FC<LanguageButtonType> = (props) => {
+export const LanguageButton: React.FC<Props> = (props) => {
   const router = useRouter();
   const { pathname, asPath, query } = router;
   return (

@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from 'next/router';
-import { FeedbackModalType } from 'types';
+import { Props } from './Props';
 
-export const FeedbackModals: React.FC<FeedbackModalType> = (props) => {
+export const FeedbackModals: React.FC<Props> = (props) => {
   const router = useRouter();
   return (
     <div className='w-full backdrop-blur-sm h-full fixed lg:bg-frozen-bg lg:bg-none bg-modal-bg z-50 flex justify-center items-start pt-[5rem] lg:pt-[9rem]'>
