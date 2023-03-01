@@ -1,9 +1,9 @@
 import { Inputs, ModalButton, ModalLayout } from 'components';
 import { FormProvider } from 'react-hook-form';
 import { useRegistrationModalConfig } from 'hooks';
-import { RegistrationModalType } from 'types';
+import { Props } from './Props';
 
-export const RegistrationModal: React.FC<RegistrationModalType> = (props) => {
+export const RegistrationModal: React.FC<Props> = (props) => {
   const { InputsGroup, methods, t, submit, googleAuthHandler } =
     useRegistrationModalConfig(props.setHasRegistered);
   const displayInputs = InputsGroup.map((input) => {

@@ -1,6 +1,6 @@
-import { ModalButtonType } from 'types';
+import { Props } from './Props';
 
-export const ModalButton: React.FC<ModalButtonType> = (props) => {
+export const ModalButton: React.FC<Props> = (props) => {
   return (
     <button
       className={`${

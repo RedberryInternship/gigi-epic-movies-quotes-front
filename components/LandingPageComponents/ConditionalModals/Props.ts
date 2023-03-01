@@ -1,4 +1,4 @@
-export type ConditionalModalsType = {
+export type Props = {
   showRegistrationModal: boolean;
   showLoginModal: boolean;
   hasRegistered: boolean;

@@ -1,4 +1,4 @@
-export type BurgerMenuType = {
+export type Props = {
   burgerMenu: boolean;
   setBurgerMenu: (value: boolean) => void;
 };

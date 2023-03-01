@@ -1,8 +1,8 @@
 import { ProfileInputs } from 'components';
 import { useMobileInputsRefresh } from 'hooks';
-import { MobileInputsBlockType } from 'types';
+import { Props } from './Props';
 
-export const MobileInputsBlock: React.FC<MobileInputsBlockType> = (props) => {
+export const MobileInputsBlock: React.FC<Props> = (props) => {
   const { t, name } = useMobileInputsRefresh();
   return (
     <>

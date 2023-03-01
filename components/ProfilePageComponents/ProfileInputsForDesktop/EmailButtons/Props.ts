@@ -1,4 +1,4 @@
-export type EmailButtonsType = {
+export type Props = {
   value: string;
   name: string;
   verified: boolean;

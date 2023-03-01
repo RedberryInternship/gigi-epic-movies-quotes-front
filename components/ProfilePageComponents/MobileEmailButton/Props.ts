@@ -1,4 +1,4 @@
-export type MobileEmailButtonType = {
+export type Props = {
   setShowEmailsModal: (value: boolean) => void;
   showEmailsModal: boolean;
 };

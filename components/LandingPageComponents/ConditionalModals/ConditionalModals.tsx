@@ -5,10 +5,10 @@ import {
   ForgotPasswordModal,
   PasswordResetModal,
 } from 'components';
-import { ConditionalModalsType } from 'types';
+import { Props } from './Props';
 import useConditionalModalsConfig from './useConditionalModalsConfig';
 
-export const ConditionalModals: React.FC<ConditionalModalsType> = (props) => {
+export const ConditionalModals: React.FC<Props> = (props) => {
   const { t } = useConditionalModalsConfig(
     props.response,
     props.setPasswordResetModal

@@ -2,9 +2,10 @@
 import { ModalLayout, Inputs, ModalButton } from 'components';
 import { FormProvider } from 'react-hook-form';
 import { usePasswordResetModalConfig } from 'hooks';
-import { InputsType, PasswordResetModalType } from 'types';
+import { InputsType } from 'types';
+import { Props } from './Props';
 
-export const PasswordResetModal: React.FC<PasswordResetModalType> = (props) => {
+export const PasswordResetModal: React.FC<Props> = (props) => {
   const { methods, displayInputs, t, submit } = usePasswordResetModalConfig(
     props.setSuccessResetModal
   );

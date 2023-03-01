@@ -1,5 +1,5 @@
 import { useTranslation } from 'next-i18next';
-import { QuoteMap } from 'types';
+import { Props } from './Props';
 import { QuoteCard } from 'components';
 import { useSelector } from 'react-redux';
 import { getQuotes } from 'slices/quotesSlice';
@@ -7,7 +7,7 @@ import { getQuotes } from 'slices/quotesSlice';
 export const RenderQuotes = () => {
   const { i18n } = useTranslation('movies');
   const getQuotesHere = useSelector(getQuotes);
-  const displayQuotes = getQuotesHere?.map((quote: QuoteMap, index: number) => {
+  const displayQuotes = getQuotesHere?.map((quote: Props, index: number) => {
     return (
       <QuoteCard
         key={index}

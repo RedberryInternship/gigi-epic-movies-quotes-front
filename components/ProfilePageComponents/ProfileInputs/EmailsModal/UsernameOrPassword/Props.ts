@@ -1,4 +1,4 @@
-export type UsernameOrPasswordType = {
+export type Props = {
   enableProfileModalEdit: string;
   setEnableProfileModalEdit: (value: string) => void;
   name: string;

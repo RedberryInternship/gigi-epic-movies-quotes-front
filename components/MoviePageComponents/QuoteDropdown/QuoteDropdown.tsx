@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useQuoteDropdownConfig } from 'hooks';
-import { QuoteDropdownType } from 'types';
+import { Props } from './Props';
 import { useDispatch } from 'react-redux';
 import {
   setEditQuote,
@@ -9,7 +9,7 @@ import {
 } from 'slices/quotesSlice';
 import { useTranslation } from 'next-i18next';
 
-export const QuoteDropdown: React.FC<QuoteDropdownType> = (props) => {
+export const QuoteDropdown: React.FC<Props> = (props) => {
   const modalRef = useQuoteDropdownConfig(
     props.setShowDropdown,
     props.showDropdown,

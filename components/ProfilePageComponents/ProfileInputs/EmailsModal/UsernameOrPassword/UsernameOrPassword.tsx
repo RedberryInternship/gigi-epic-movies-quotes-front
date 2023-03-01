@@ -4,9 +4,9 @@ import {
   EditUsername,
   EditPassword,
 } from 'components';
-import { UsernameOrPasswordType } from 'types';
+import { Props } from './Props';
 
-export const UsernameOrPassword: React.FC<UsernameOrPasswordType> = (props) => {
+export const UsernameOrPassword: React.FC<Props> = (props) => {
   return (
     <>
       {props.enableProfileModalEdit === 'username' && (

@@ -1,4 +1,4 @@
-export type ModalLayoutType = {
+export type Props = {
   title: string;
   message: string;
   children: JSX.Element;

@@ -1,4 +1,4 @@
-export type ProfileInputsMobileType = {
+export type Props = {
   label: string;
   type: string;
   placeholder: string;

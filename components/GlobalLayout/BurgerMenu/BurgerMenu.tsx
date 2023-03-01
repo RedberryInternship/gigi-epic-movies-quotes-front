@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import { BurgerMenuType } from 'types';
 import useBurgerMenuConfig from './useBurgerMenuConfig';
+import { Props } from './Props';
 
-export const BurgerMenu: React.FC<BurgerMenuType> = (props) => {
+export const BurgerMenu: React.FC<Props> = (props) => {
   const { t, router, image, name } = useBurgerMenuConfig();
   return (
     <div

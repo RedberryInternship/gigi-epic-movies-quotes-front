@@ -1,4 +1,4 @@
-export type ModalButtonType = {
+export type Props = {
   text: string;
   color: string;
 };
